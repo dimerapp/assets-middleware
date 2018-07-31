@@ -2,7 +2,10 @@
   "name": "@dimerapp/assets-middleware",
   "version": "1.0.0",
   "description": "Server assets detected via dimer image",
-  "main": "server-static.spec.js",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "mrm": "mrm --preset=@adonisjs/mrm-preset",
     "pretest": "npm run lint",

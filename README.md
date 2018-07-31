@@ -44,8 +44,6 @@ const basePath = __dirname
 route.use(assetsMiddleware(basePath))
 ```
 
-## Usage
-
 ## Change log
 
 The change log can be found in the [CHANGELOG.md](https://github.com/dimerapp/assets-middleware/CHANGELOG.md) file.
