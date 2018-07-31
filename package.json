@@ -1,0 +1,46 @@
+{
+  "name": "@dimerapp/assets-middleware",
+  "version": "1.0.0",
+  "description": "Server assets detected via dimer image",
+  "main": "server-static.spec.js",
+  "scripts": {
+    "mrm": "mrm --preset=@adonisjs/mrm-preset",
+    "pretest": "npm run lint",
+    "test": "japa",
+    "commit": "git-cz",
+    "lint": "standard"
+  },
+  "keywords": [
+    "dimer"
+  ],
+  "author": "virk",
+  "license": "MIT",
+  "devDependencies": {
+    "@adonisjs/mrm-preset": "^1.0.10",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "fs-extra": "^7.0.0",
+    "japa": "^1.0.6",
+    "japa-cli": "^1.0.1",
+    "mrm": "^1.2.1",
+    "pkg-ok": "^2.2.0",
+    "standard": "^11.0.1",
+    "supertest": "^3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "nyc": {
+    "exclude": [
+      "test",
+      "japaFile.js"
+    ]
+  },
+  "dependencies": {
+    "@dimerapp/utils": "^1.0.3",
+    "ow": "^0.6.0",
+    "serve-static": "^1.13.2"
+  }
+}
